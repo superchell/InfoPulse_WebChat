@@ -1,0 +1,13 @@
+<%=@error%>
+<%= form_for @chat_user, url: {action: 'create'}, html: {class: 'FormClass'} do |f|%>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.label :login %>
+    <%= f.text_field :login %>
+    <br>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <br>
+    <%= f.submit :send %>
+<%end%>

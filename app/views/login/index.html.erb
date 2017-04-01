@@ -1,0 +1,12 @@
+<%=@error%>
+<%=form_tag(controller: 'login', action: 'create', method: 'post') do %>
+
+    <%= label_tag(:l, 'Input login') %>
+    <%= text_field_tag(:l) %>
+
+    <%= label_tag(:p, 'Input password') %>
+    <%= text_field_tag(:p) %>
+
+    <%= submit_tag('Submit')%>
+
+<%end%>
