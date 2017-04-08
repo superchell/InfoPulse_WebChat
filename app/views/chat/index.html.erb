@@ -1,0 +1,14 @@
+<div class="form">
+  <form>
+    <textarea id="output-message"></textarea>
+    <input type="text" id="input-message">
+    <input type="button" id="send">
+    <input type="button" id="broadcast">
+    <input type="button" id="logout">
+  </form>
+</div>
+<div id="angular-user-list" ng-app="web-chat" ng-controller="web-chat-controller">
+  <ul>
+    <li ng-repeat="item in items" ng-click="changeUser(item)">{{item}}</li>
+  </ul>
+</div>
